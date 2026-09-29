@@ -30,16 +30,16 @@ public class S07_DepthTest2 : MonoBehaviour
             }
         }
 
-        // 빨간 삼각형: 왼쪽(Z=0.2, 앞)에서 오른쪽(Z=0.8, 뒤)으로 깊어짐
-        Vector3 redA = new Vector3(30f, 60f, 0.2f);
-        Vector3 redB = new Vector3(180f, 60f, 0.8f);
-        Vector3 redC = new Vector3(105f, 200f, 0.5f);
+        // 1. 빨간 삼각형: 밑변은 앞(Z=0.1), 윗 꼭짓점은 뒤(Z=0.9)
+        Vector3 redA = new Vector3(30f,  60f,  0.1f);
+        Vector3 redB = new Vector3(180f, 80f,  0.3f);
+        Vector3 redC = new Vector3(105f, 200f, 0.9f);
         DrawTriangle(redA, redB, redC, new Color(0.9f, 0.2f, 0.3f, 1f));
 
-        // 파란 삼각형: 왼쪽(Z=0.8, 뒤)에서 오른쪽(Z=0.2, 앞)으로 가까워짐
-        Vector3 blueA = new Vector3(75f, 60f, 0.8f);
-        Vector3 blueB = new Vector3(225f, 60f, 0.2f);
-        Vector3 blueC = new Vector3(150f, 200f, 0.5f);
+        // 2. 파란 삼각형: 밑변은 뒤(Z=0.9), 윗 꼭짓점은 앞(Z=0.1)
+        Vector3 blueA = new Vector3(75f,  10f,  0.9f);
+        Vector3 blueB = new Vector3(225f, 60f,  0.5f);
+        Vector3 blueC = new Vector3(150f, 200f, 0.1f);
         DrawTriangle(blueA, blueB, blueC, new Color(0.2f, 0.5f, 0.9f, 1f));
 
         canvasTexture.Apply();
