@@ -19,7 +19,7 @@ public class S11_VirtualCamera_Finish : MonoBehaviour
     public RawImage canvasImage;                                  // 캔버스를 보여 줄 RawImage (S05처럼 직접 연결)
     public int width = 400;                                       // 캔버스 가로 픽셀 수
     public int height = 300;                                      // 캔버스 세로 픽셀 수
-    public Color backgroundColor = Color.black;                   // 캔버스 바탕색
+    public Color backgroundColor = new Color(0, 0, 0, 0);         // 캔버스 바탕색 (투명해야 3D Game 뷰와 와이어프레임이 겹쳐서 함께 보임)
     public Color lineColor = Color.white;                         // 와이어프레임 선 색
 
     Texture2D canvas;                                             // 픽셀을 직접 칠하는 텍스처
