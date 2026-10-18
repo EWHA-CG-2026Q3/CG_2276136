@@ -220,6 +220,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 495598167}
+  - component: {fileID: 495598168}
   m_Layer: 0
   m_Name: Ball_Orbit
   m_TagString: Untagged
@@ -243,6 +244,28 @@ Transform:
   - {fileID: 1200864521}
   m_Father: {fileID: 2024033505}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &495598168
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495598166}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8a8aa960bd44e364e80e9c37c301b99d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &779024329
 GameObject:
   m_ObjectHideFlags: 0
