@@ -1,9 +1,20 @@
 using UnityEngine;
 
+[ExecuteAlways]
 [RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))]
 public class S03_CustomPentagon : MonoBehaviour
 {
+    void OnEnable()
+    {
+        BuildMesh();
+    }
+
     void Start()
+    {
+        BuildMesh();
+    }
+
+    public void BuildMesh()
     {
         // 1. Mesh 인스턴스 생성
         Mesh mesh = new Mesh();
@@ -32,6 +43,13 @@ public class S03_CustomPentagon : MonoBehaviour
         mesh.RecalculateNormals();
         mesh.RecalculateBounds();
         // 5. MeshFilter에 생성한 메시 연결
-        GetComponent<MeshFilter>().mesh = mesh;
+        MeshFilter mf = GetComponent<MeshFilter>();
+        if (mf != null) mf.sharedMesh = mesh;
+
+        MeshRenderer mr = GetComponent<MeshRenderer>();
+        if (mr != null && mr.sharedMaterial == null)
+        {
+            mr.sharedMaterial = new Material(Shader.Find("Universal Render Pipeline/Lit"));
+        }
     }
 }

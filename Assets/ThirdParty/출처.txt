@@ -1,0 +1,16 @@
+[외부 에셋 및 텍스처 출처 안내]
+
+1. Pavilion (정자 3D 에셋)
+- 이름: Pavilion (IGBlocks)
+- 주소: https://assetstore.unity.com/packages/3d/props/exterior/pavilion-85680
+- 라이선스: Standard Unity Asset Store EULA
+
+2. S14 ~ S15 PBR 및 수류 Seamless 텍스처 (Assets/ThirdParty/Textures/)
+- 파일 목록:
+  * Tex_CorrodedMetal.png (부식 금속 PBR 텍스처)
+  * Tex_LavaEmber.png (숯불/용암 Emission 텍스처)
+  * Tex_StoneMarble.png (대리석/화강암 돌 텍스처)
+  * Tex_WoodGrain.png (원목 나뭇결 텍스처)
+  * Tex_WaterSeamless1.png / Tex_WaterSeamless2.png (테이블 상판 수류 Seamless 텍스처)
+  * Tex_ExtraFlowSeamless1.png / Tex_ExtraFlowSeamless2.png (추가 흐름 효과 Seamless 텍스처)
+- 라이선스: CC0 / Public Domain (과제 실습용 Seamless 타일링 텍스처)
